@@ -11,7 +11,7 @@ const NavBar = () => {
     setNav(!nav);
   };
   return (
-    <div className="w-[100%] z-10  bg-white">
+    <div className="w-[100%] z-10  bg-white sticky top-0 md:static  ">
       <div className="md:w-[80%] mx-auto md:flex hidden justify-between ">
         <div className="w-[50%] flex  items-center gap-2 border-r-[1px] border-[#927A7A]">
           {" "}
@@ -72,7 +72,7 @@ const NavBar = () => {
         className={
           nav
             ? "sm:hidden absolute top-0 right-0 left-0 bottom-0 flex justify-center items-center  w-full h-screen bg-white text-black text-center duration-300 ease-in-out"
-            : "sm:hidden absolute top-0 right-0 left-[-100%] bottom-0 flex justify-center items-center w-full h-screen bg-white  text-black text-center duration-300 ease-in-out"
+            : "hidden"
         }
       >
         <p className="absolute top-4 right-4">
